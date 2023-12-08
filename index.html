@@ -3,25 +3,172 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1" />
+    <meta name="description" content="news page frontend mentor challenge" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
-    Home New Popular Trending Categories The Bright Future of Web 3.0? We dive
-    into the next evolution of the web that claims to put the power of the
-    platforms back into the hands of the people. But is it really fulfilling its
-    promise? Read more New Hydrogen VS Electric Cars Will hydrogen-fueled cars
-    ever catch up to EVs? The Downsides of AI Artistry What are the possible
-    adverse effects of on-demand AI image generation? Is VC Funding Drying Up?
-    Private funding by VC firms is down 50% YOY. We take a look at what that
-    means. 01 Reviving Retro PCs What happens when old PCs are given modern
-    upgrades? 02 Top 10 Laptops of 2022 Our best picks for various needs and
-    budgets. 03 The Growth of Gaming How the pandemic has sparked fresh
-    opportunities.
+    <div class="news-page">
+      <header class="nav-header">
+        <nav class="nav-bar">
+          <div class="logo">
+            <img src="assets/images/logo.svg" alt="black letter logo" />
+          </div>
+          <div class="navigation hide">
+            <ul>
+              <li><a class="nav-link" href="#">Home</a></li>
+              <li><a class="nav-link" href="#">New</a></li>
+              <li><a class="nav-link" href="#">Popular</a></li>
+              <li><a class="nav-link" href="#">Trending</a></li>
+              <li><a class="nav-link" href="#">Categories</a></li>
+            </ul>
+          </div>
+          <div class="menu">
+            <a class="open-menu-btn" href="#">
+              <img
+                src="assets/images/icon-menu.svg"
+                alt="hamburger close menu"
+              />
+            </a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="grid-container">
+          <div>
+            <div>
+              <img
+                class="main-image"
+                src="assets/images/image-web-3-desktop.jpg"
+                alt="logical figures"
+              />
+            </div>
+
+            <div class="grid-2">
+              <div>
+                <h1 class="main-header">The Bright Future of Web 3.0?</h1>
+              </div>
+              <div class="text-container">
+                <p class="main-text">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button class="btn">READ MORE</button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <aside class="aside-container">
+              <header><h3 class="aside-header">New</h3></header>
+              <article>
+                <a class="aside-link" href="#">Hydrogen VS Electric Cars</a>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </article>
+              <hr />
+              <article>
+                <a class="aside-link" href="#">The Downsides of AI Artistry</a>
+                <p>
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </article>
+              <hr />
+              <article>
+                <a class="aside-link" href="#">Is VC Funding Drying Up?</a>
+                <p>
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </article>
+            </aside>
+          </div>
+        </section>
+        <section class="cards-container">
+          <article class="card-container">
+            <div>
+              <img
+                class="card-image"
+                src="assets/images/image-retro-pcs.jpg"
+                alt="retro pc"
+              />
+            </div>
+            <div class="card-text-container">
+              <span class="number">01</span>
+              <a class="card-link" href="#">Reviving Retro PCs</a>
+              <p class="card-text">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </article>
+          <article class="card-container">
+            <div>
+              <img
+                class="card-image"
+                src="assets/images/image-top-laptops.jpg"
+                alt="laptop keys black red"
+              />
+            </div>
+            <div class="card-text-container">
+              <span class="number">02</span>
+              <a class="card-link" href="#">Top 10 Laptops of 2022</a>
+              <p class="card-text">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </article>
+          <article class="card-container">
+            <div>
+              <img
+                class="card-image"
+                src="assets/images/image-gaming-growth.jpg"
+                alt="gaming console"
+              />
+            </div>
+            <div class="card-text-container">
+              <span class="number">03</span>
+              <a class="card-link" href="#">The Growth of Gaming</a>
+              <p class="card-text">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <div class="side-menu hide">
+      <aside class="side-menu-container">
+        <div class="menu">
+          <a class="close-menu-btn" href="#">
+            <img
+              src="assets/images/icon-menu-close.svg"
+              alt="hamburger close menu"
+            />
+          </a>
+        </div>
+        <ul>
+          <li><a class="menu-nav-link" href="#">Home</a></li>
+          <li><a class="menu-nav-link" href="#">New</a></li>
+          <li><a class="menu-nav-link" href="#">Popular</a></li>
+          <li><a class="menu-nav-link" href="#">Trending</a></li>
+          <li><a class="menu-nav-link" href="#">Categories</a></li>
+        </ul>
+      </aside>
+    </div>
   </body>
+  <script type="module" src="index.js"></script>
 </html>
